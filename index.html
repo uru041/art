@@ -26,6 +26,7 @@
       background-repeat: repeat;
       background-size: 120px auto;
       background-color: #fdf8dc;
+      background-attachment: fixed;
       font-family: 'Noto Sans JP', sans-serif;
       font-weight: 300;
       overflow-x: hidden;
@@ -99,15 +100,14 @@
   left: -3rem;
   top: 71rem;
   width: 200px;
-  transform: rotate(0deg);
   opacity: 0.9;
   animation: float 4s ease-in-out 1s infinite;
 }
 
 @keyframes float {
-  0%   { transform: translateY(0px) rotate(15deg); }
-  50%  { transform: translateY(-12px) rotate(15deg); }
-  100% { transform: translateY(0px) rotate(15deg); }
+  0%   { transform: translateY(0px) rotate(-20deg); }
+  50%  { transform: translateY(-12px) rotate(-20deg); }
+  100% { transform: translateY(0px) rotate(-20deg); }
 }
 
     /* メインイラスト */
@@ -163,10 +163,10 @@
     }
 
     .section-bg-white {
-      background: rgba(255,255,255,0.75);
-      margin: 0 0.5rem;
-      border-radius: 12px;
-      padding: 2.5rem 1.8rem;
+      background: transparent;
+      margin: 0;
+      border-radius: 0;
+      padding: 0;
     }
 
     .section-eyebrow {
