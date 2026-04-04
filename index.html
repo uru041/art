@@ -24,8 +24,8 @@
     body {
       background-image: url('img/bg-pattern.png');
       background-repeat: repeat;
-      background-size: 200px auto;
-      color: var(--text);
+      background-size: 120px auto;
+      background-color: #fdf8dc;
       font-family: 'Noto Sans JP', sans-serif;
       font-weight: 300;
       overflow-x: hidden;
@@ -42,10 +42,15 @@
 
     /* ===== ヒーロー ===== */
     .hero {
-      padding: 4rem 2rem 3rem;
-      text-align: center;
-      position: relative;
-    }
+  padding: 4rem 2rem 3rem;
+  text-align: center;
+  position: relative;
+  background: rgba(255, 248, 220, 0.85);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
     .hero-title {
       font-family: 'Milonga', serif;
