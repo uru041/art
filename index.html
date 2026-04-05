@@ -31,23 +31,20 @@
       font-family: 'Noto Sans JP', sans-serif;
       font-weight: 300;
       overflow-x: hidden;
-      /* ★ display:flex / align-items / flex-direction をすべて削除 */
     }
 
     a { text-decoration: none; color: inherit; }
 
-    /* ===== 全体コンテナ ===== */
     .container {
       width: 100%;
       max-width: 480px;
-      margin: 0 auto;   /* ★ これだけで中央寄せ */
+      margin: 0 auto;
       border-left: 1px solid #E4C387;
       border-right: 1px solid #E4C387;
       position: relative;
       background: rgba(255, 248, 220, 1);
     }
 
-    /* ===== ヒーロー ===== */
     .hero {
       padding: 3rem 2rem 3rem;
       text-align: center;
@@ -97,42 +94,21 @@
     .hero-deco img { width: 100%; height: auto; }
     .hero-deco-ph { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 2rem; opacity: 1; }
 
-    .hd-shell {
-      top: 31rem; right: -2.5rem; width: 123px;
-      transform: rotate(15deg); opacity: 1;
-      animation: float 4s ease-in-out infinite;
-    }
-    .hd-flip {
-      left: -3rem; top: 53rem; width: 160px; opacity: 1;
-      animation: float 4s ease-in-out 1s infinite; z-index: 10;
-    }
-    .hd-bord {
-      left: -2rem; top: 135rem; width: 105px; opacity: 1;
-      animation: float 4s ease-in-out 0.5s infinite; z-index: 10;
-    }
-    .hd-shell2 {
-      right: -2rem; top: 103rem; width: 100px;
-      transform: rotate(10deg); opacity: 1;
-      animation: float 4s ease-in-out 1.5s infinite; z-index: 10;
-    }
-    .hd-shell3 {
-      right: -1.0rem; top: 250rem; width: 105px;
-      transform: rotate(-8deg); opacity: 1;
-      animation: float 4s ease-in-out 2s infinite; z-index: 10;
-    }
+    .hd-shell { top: 31rem; right: -2.5rem; width: 123px; transform: rotate(15deg); opacity: 1; animation: float 4s ease-in-out infinite; }
+    .hd-flip { left: -3rem; top: 53rem; width: 160px; opacity: 1; animation: float 4s ease-in-out 1s infinite; z-index: 10; }
+    .hd-bord { left: -2rem; top: 135rem; width: 105px; opacity: 1; animation: float 4s ease-in-out 0.5s infinite; z-index: 10; }
+    .hd-shell2 { right: -2rem; top: 103rem; width: 100px; transform: rotate(10deg); opacity: 1; animation: float 4s ease-in-out 1.5s infinite; z-index: 10; }
+    .hd-shell3 { right: -1.0rem; top: 250rem; width: 105px; transform: rotate(-8deg); opacity: 1; animation: float 4s ease-in-out 2s infinite; z-index: 10; }
 
     .hero-main-illust img { width: 100%; height: auto; display: block; }
 
-    .hero-btns {
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-    }
+    .hero-btns { display: flex; gap: 1rem; justify-content: center; }
 
+    /* ★ ボタン全部Milonga */
     .btn-gold {
       background: var(--gold);
       color: var(--white);
-      font-family: 'Noto Sans JP', sans-serif;
+      font-family: 'Milonga', serif;  /* ★ 変更 */
       font-size: 0.82rem;
       letter-spacing: 0.1em;
       padding: 0.75rem 2rem;
@@ -144,7 +120,6 @@
     }
     .btn-gold:hover { background: var(--gold-light); transform: translateY(-2px); }
 
-    /* ===== セクション共通 ===== */
     .section { padding: 3.5rem 2rem; position: relative; }
     .section-bg-white { background: transparent; margin: 0; border-radius: 0; padding: 0; }
 
@@ -160,43 +135,31 @@
       justify-content: center;
       gap: 0.8rem;
     }
-    .section-eyebrow::before, .section-eyebrow::after {
-      content: ''; width: 30px; height: 1px;
-      background: var(--gold); opacity: 0.5;
-    }
+    .section-eyebrow::before, .section-eyebrow::after { content: ''; width: 30px; height: 1px; background: var(--gold); opacity: 0.5; }
 
-    .section-title {
-      font-family: 'Milonga', serif;
-      font-size: 2rem;
-      color: var(--brown);
-      text-align: center;
-      letter-spacing: 0.05em;
-      margin-bottom: 2rem;
-    }
+    .section-title { font-family: 'Milonga', serif; font-size: 2rem; color: var(--brown); text-align: center; letter-spacing: 0.05em; margin-bottom: 2rem; }
 
-    /* ===== ABOUT ===== */
-    .about-photo {
-      width: 70%; margin: 0 auto 1.5rem; aspect-ratio: 1;
-      border-radius: 50% 45% 55% 50% / 50% 55% 45% 50%;
-      overflow: hidden; background: rgba(255,255,255,0.5);
-      border: 1px solid rgba(180,154,90,0.2);
-    }
+    .about-photo { width: 70%; margin: 0 auto 1.5rem; aspect-ratio: 1; border-radius: 50% 45% 55% 50% / 50% 55% 45% 50%; overflow: hidden; background: rgba(255,255,255,0.5); border: 1px solid rgba(180,154,90,0.2); }
     .about-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .about-photo-ph {
-      width: 100%; height: 100%; display: flex; align-items: center;
-      justify-content: center; font-family: 'Milonga', serif;
-      font-size: 0.8rem; color: rgba(180,154,90,0.3);
-      flex-direction: column; gap: 0.5rem;
-    }
+    .about-photo-ph { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-family: 'Milonga', serif; font-size: 0.8rem; color: rgba(180,154,90,0.3); flex-direction: column; gap: 0.5rem; }
     .about-name { font-family: 'Milonga', serif; font-size: 1.3rem; color: var(--brown); text-align: center; margin-bottom: 0.3rem; }
     .about-role { font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--brown-light); text-align: center; margin-bottom: 1.5rem; }
     .about-text { font-size: 0.78rem; line-height: 2.1; color: var(--text); margin-bottom: 1rem; }
     .about-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 1.2rem; }
     .about-tag { font-size: 0.58rem; letter-spacing: 0.08em; color: var(--brown-light); border: 1px solid rgba(180,154,90,0.3); padding: 0.25rem 0.75rem; border-radius: 20px; background: rgba(255,255,255,0.5); }
 
-    /* ===== WORKS ===== */
     .works-links { display: flex; gap: 0.8rem; justify-content: center; margin-bottom: 2rem; }
-    .works-link-btn { font-size: 0.65rem; letter-spacing: 0.1em; color: var(--brown); border: 1px solid rgba(180,154,90,0.4); padding: 0.5rem 1.2rem; border-radius: 20px; background: rgba(255,255,255,0.6); transition: all 0.3s; }
+    .works-link-btn {
+      font-family: 'Milonga', serif;  /* ★ 追加 */
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      color: var(--brown);
+      border: 1px solid rgba(180,154,90,0.4);
+      padding: 0.5rem 1.2rem;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.6);
+      transition: all 0.3s;
+    }
     .works-link-btn:hover { background: var(--gold); color: var(--white); border-color: var(--gold); }
 
     .works-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.6rem; }
@@ -207,7 +170,6 @@
     .works-more { text-align: center; margin-top: 1.5rem; }
     .works-more a { font-size: 0.65rem; letter-spacing: 0.15em; color: var(--brown-light); border-bottom: 1px solid rgba(180,154,90,0.3); padding-bottom: 2px; }
 
-    /* ===== BRUSH & YOUTUBE ===== */
     .brush-card { background: rgba(255,255,255,0.75); border-radius: 12px; overflow: hidden; margin-bottom: 1.5rem; }
     .brush-card-img { width: 100%; aspect-ratio: 16/9; overflow: hidden; background: rgba(255,255,255,0.5); }
     .brush-card-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
@@ -216,10 +178,19 @@
     .brush-card-label { font-size: 0.55rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem; }
     .brush-card-title { font-family: 'Milonga', serif; font-size: 1.2rem; color: var(--brown); margin-bottom: 0.8rem; }
     .brush-card-desc { font-size: 0.75rem; line-height: 2; color: var(--text); margin-bottom: 1.2rem; }
-    .brush-card-btn { display: inline-block; background: var(--gold); color: var(--white); font-size: 0.65rem; letter-spacing: 0.15em; padding: 0.6rem 1.5rem; border-radius: 25px; transition: all 0.3s; }
+    .brush-card-btn {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--white);
+      font-family: 'Milonga', serif;  /* ★ 追加 */
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      padding: 0.6rem 1.5rem;
+      border-radius: 25px;
+      transition: all 0.3s;
+    }
     .brush-card-btn:hover { background: var(--gold-light); }
 
-    /* ===== Q&A ===== */
     .qa-list { border-top: 1px solid rgba(180,154,90,0.2); }
     .qa-item { border-bottom: 1px solid rgba(180,154,90,0.2); }
     .qa-question { display: flex; justify-content: space-between; align-items: flex-start; padding: 1.2rem 0; cursor: pointer; gap: 1rem; }
@@ -231,7 +202,6 @@
     .qa-item.open .qa-answer { max-height: 200px; }
     .qa-answer-inner { padding: 0 0 1.2rem 1.5rem; font-size: 0.72rem; line-height: 2.1; color: var(--brown-light); }
 
-    /* ===== CONTACT ===== */
     .contact-desc { font-size: 0.78rem; line-height: 2.1; color: var(--text); margin-bottom: 1.5rem; text-align: center; }
     .contact-form { background: rgba(255,255,255,0.6); border-radius: 8px; padding: 1.5rem; }
     .form-group { margin-bottom: 1rem; }
@@ -242,7 +212,6 @@
     .form-submit { width: 100%; background: var(--gold); color: var(--white); border: none; border-radius: 30px; padding: 0.9rem; font-family: 'Milonga', serif; font-size: 1rem; letter-spacing: 0.1em; cursor: pointer; transition: all 0.3s; margin-top: 0.5rem; }
     .form-submit:hover { background: var(--gold-light); }
 
-    /* ===== フッター ===== */
     .footer { padding: 3rem 2rem 2rem; text-align: center; position: relative; }
     .footer-illust { display: flex; justify-content: center; align-items: flex-end; gap: 1rem; margin-bottom: 1.5rem; }
     .footer-illust img { height: 180px; width: auto; }
@@ -250,7 +219,6 @@
     .footer-logo { font-family: 'Milonga', serif; font-size: 1.2rem; color: var(--gold); margin-bottom: 0.3rem; }
     .footer-copy { font-size: 0.6rem; color: var(--brown-light); letter-spacing: 0.1em; opacity: 0.6; }
 
-    /* ===== ナビ（固定） ===== */
     nav {
       position: fixed;
       top: 0;
@@ -274,21 +242,18 @@
     .nav-menu a { font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--brown-light); transition: color 0.3s; }
     .nav-menu a:hover { color: var(--gold); }
 
-    /* ===== ティッカー ===== */
     .ticker { overflow: hidden; white-space: nowrap; padding: 0.7rem 0; background: rgba(255,255,255,0.4); border-top: 1px solid rgba(180,154,90,0.15); border-bottom: 1px solid rgba(180,154,90,0.15); }
     .ticker-inner { display: inline-flex; align-items: center; animation: ticker 25s linear infinite; }
     .ticker-item { font-family: 'Milonga', serif; font-size: 0.85rem; letter-spacing: 0.1em; color: var(--brown-light); padding: 0 2rem; }
     .ticker-sep { color: var(--gold); font-size: 0.5rem; }
     @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
-    /* ===== モーダル ===== */
     .modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.7); z-index: 200; align-items: center; justify-content: center; }
     .modal.open { display: flex; }
     .modal-inner { position: relative; max-width: 90vw; max-height: 90vh; }
     .modal-img { max-width: 90vw; max-height: 85vh; object-fit: contain; border-radius: 8px; display: block; }
     .modal-close { position: absolute; top: -2rem; right: 0; background: none; border: none; color: var(--white); font-size: 1.2rem; cursor: pointer; }
 
-    /* ===== iPad対応 ===== */
     @media (min-width: 600px) {
       .hero { min-height: auto; padding: 5rem 2rem 3rem; }
     }
@@ -371,29 +336,29 @@
           <a href="https://creator.pixta.jp/@prof2629655/illustrations" target="_blank" rel="noopener" class="works-link-btn">PIXTA</a>
         </div>
         <div class="works-grid">
-          <div class="work-item" onclick="openModal('img/works01.jpg')"><img src="img/works01.jpg" alt=""><div class="work-item-ph" style="display:none;"></div></div>
-          <div class="work-item" onclick="openModal('img/works02.jpg')"><img src="img/works02.jpg" alt=""><div class="work-item-ph" style="display:none;"></div></div>
-          <div class="work-item" onclick="openModal('img/works03.jpg')"><img src="img/works03.jpg" alt=""><div class="work-item-ph" style="display:none;"></div></div>
-          <div class="work-item" onclick="openModal('img/works04.jpg')"><img src="img/works04.jpg" alt=""><div class="work-item-ph" style="display:none;"></div></div>
-          <div class="work-item" onclick="openModal('img/works05.jpg')"><img src="img/works05.jpg" alt=""><div class="work-item-ph" style="display:none;"></div></div>
-          <div class="work-item" onclick="openModal('img/works06.jpg')"><img src="img/works06.jpg" alt=""><div class="work-item-ph" style="display:none;"></div></div>
-           </div>
+          <div class="work-item" onclick="openModal('img/works01.jpg')"><img src="img/works01.jpg" alt=""></div>
+          <div class="work-item" onclick="openModal('img/works02.jpg')"><img src="img/works02.jpg" alt=""></div>
+          <div class="work-item" onclick="openModal('img/works03.jpg')"><img src="img/works03.jpg" alt=""></div>
+          <div class="work-item" onclick="openModal('img/works04.jpg')"><img src="img/works04.jpg" alt=""></div>
+          <div class="work-item" onclick="openModal('img/works05.jpg')"><img src="img/works05.jpg" alt=""></div>
+          <div class="work-item" onclick="openModal('img/works06.jpg')"><img src="img/works06.jpg" alt=""></div>
+        </div>
         <div class="works-grid works-more-grid" style="display:none; margin-top:0.6rem;">
-          <div class="work-item" onclick="openModal('img/works07.jpg')"><img src="img/works07.jpg" alt=""><div class="work-item-ph" style="display:none;"></div></div>
-          <div class="work-item" onclick="openModal('img/works08.jpg')"><img src="img/works08.jpg" alt=""><div class="work-item-ph" style="display:none;"></div></div>
-          <div class="work-item" onclick="openModal('img/works09.jpg')"><img src="img/works09.jpg" alt=""><div class="work-item-ph" style="display:none;"></div></div>
-          <div class="work-item" onclick="openModal('img/works10.jpg')"><img src="img/works10.jpg" alt=""><div class="work-item-ph" style="display:none;"></div></div>
-          <div class="work-item" onclick="openModal('img/works11.jpg')"><img src="img/works11.jpg" alt=""><div class="work-item-ph" style="display:none;"></div></div>
-          <div class="work-item" onclick="openModal('img/works12.jpg')"><img src="img/works12.jpg" alt=""><div class="work-item-ph" style="display:none;"></div></div>
-          <div class="work-item" onclick="openModal('img/works13.jpg')"><img src="img/works13.jpg" alt=""><div class="work-item-ph" style="display:none;"></div></div>
-          <div class="work-item" onclick="openModal('img/works14.jpg')"><img src="img/works14.jpg" alt=""><div class="work-item-ph" style="display:none;"></div></div>
-          <div class="work-item" onclick="openModal('img/works15.jpg')"><img src="img/works15.jpg" alt=""><div class="work-item-ph" style="display:none;"></div></div>
-          <div class="work-item" onclick="openModal('img/works16.jpg')"><img src="img/works16.jpg" alt=""><div class="work-item-ph" style="display:none;"></div></div>
-          <div class="work-item" onclick="openModal('img/works17.jpg')"><img src="img/works17.jpg" alt=""><div class="work-item-ph" style="display:none;"></div></div>
-          <div class="work-item" onclick="openModal('img/works18.jpg')"><img src="img/works18.jpg" alt=""><div class="work-item-ph" style="display:none;"></div></div>
-          <div class="work-item" onclick="openModal('img/works19.jpg')"><img src="img/works19.jpg" alt=""><div class="work-item-ph" style="display:none;"></div></div>
-          <div class="work-item" onclick="openModal('img/works20.jpg')"><img src="img/works20.jpg" alt=""><div class="work-item-ph" style="display:none;"></div></div>
-          <div class="work-item" onclick="openModal('img/works21.jpg')"><img src="img/works21.jpg" alt=""><div class="work-item-ph" style="display:none;"></div></div>
+          <div class="work-item" onclick="openModal('img/works07.jpg')"><img src="img/works07.jpg" alt=""></div>
+          <div class="work-item" onclick="openModal('img/works08.jpg')"><img src="img/works08.jpg" alt=""></div>
+          <div class="work-item" onclick="openModal('img/works09.jpg')"><img src="img/works09.jpg" alt=""></div>
+          <div class="work-item" onclick="openModal('img/works10.jpg')"><img src="img/works10.jpg" alt=""></div>
+          <div class="work-item" onclick="openModal('img/works11.jpg')"><img src="img/works11.jpg" alt=""></div>
+          <div class="work-item" onclick="openModal('img/works12.jpg')"><img src="img/works12.jpg" alt=""></div>
+          <div class="work-item" onclick="openModal('img/works13.jpg')"><img src="img/works13.jpg" alt=""></div>
+          <div class="work-item" onclick="openModal('img/works14.jpg')"><img src="img/works14.jpg" alt=""></div>
+          <div class="work-item" onclick="openModal('img/works15.jpg')"><img src="img/works15.jpg" alt=""></div>
+          <div class="work-item" onclick="openModal('img/works16.jpg')"><img src="img/works16.jpg" alt=""></div>
+          <div class="work-item" onclick="openModal('img/works17.jpg')"><img src="img/works17.jpg" alt=""></div>
+          <div class="work-item" onclick="openModal('img/works18.jpg')"><img src="img/works18.jpg" alt=""></div>
+          <div class="work-item" onclick="openModal('img/works19.jpg')"><img src="img/works19.jpg" alt=""></div>
+          <div class="work-item" onclick="openModal('img/works20.jpg')"><img src="img/works20.jpg" alt=""></div>
+          <div class="work-item" onclick="openModal('img/works21.jpg')"><img src="img/works21.jpg" alt=""></div>
         </div>
         <div class="works-more"><a href="#" onclick="toggleMore(event)">more →</a></div>
       </div>
