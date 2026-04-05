@@ -632,6 +632,42 @@
       from { transform: translateX(0); }
       to { transform: translateX(-50%); }
     }
+    .modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  z-index: 200;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.open { display: flex; }
+
+.modal-inner {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.modal-img {
+  max-width: 90vw;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 8px;
+  display: block;
+}
+
+.modal-close {
+  position: absolute;
+  top: -2rem;
+  right: 0;
+  background: none;
+  border: none;
+  color: var(--white);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
   </style>
 </head>
 <body>
@@ -737,29 +773,89 @@
         </div>
 
        <div class="works-grid">
-  <div class="work-item"><div class="work-item-ph">①</div></div>
-  <div class="work-item"><div class="work-item-ph">②</div></div>
-  <div class="work-item"><div class="work-item-ph">③</div></div>
-  <div class="work-item"><div class="work-item-ph">④</div></div>
-  <div class="work-item"><div class="work-item-ph">⑤</div></div>
-  <div class="work-item"><div class="work-item-ph">⑥</div></div>
-  <div class="work-item"><div class="work-item-ph">⑦</div></div>
-  <div class="work-item"><div class="work-item-ph">⑧</div></div>
-  <div class="work-item"><div class="work-item-ph">⑨</div></div>
-  <div class="work-item"><div class="work-item-ph">⑩</div></div>
-  <div class="work-item"><div class="work-item-ph">⑪</div></div>
-  <div class="work-item"><div class="work-item-ph">⑫</div></div>
+  <div class="work-item" onclick="openModal('img/work02.jpg')">
+  <img src="img/work02.jpg" alt="">
+  <div class="work-item-ph" style="display:none;">②</div>
+</div>
+  <div class="work-item" onclick="openModal('img/work02.jpg')">
+  <img src="img/work02.jpg" alt="">
+  <div class="work-item-ph" style="display:none;">②</div>
+</div>
+  <div class="work-item" onclick="openModal('img/work02.jpg')">
+  <img src="img/work02.jpg" alt="">
+  <div class="work-item-ph" style="display:none;">②</div>
+</div>
+  <div class="work-item" onclick="openModal('img/work02.jpg')">
+  <img src="img/work02.jpg" alt="">
+  <div class="work-item-ph" style="display:none;">②</div>
+</div>
+  <div class="work-item" onclick="openModal('img/work02.jpg')">
+  <img src="img/work02.jpg" alt="">
+  <div class="work-item-ph" style="display:none;">②</div>
+</div>
+  <div class="work-item" onclick="openModal('img/work02.jpg')">
+  <img src="img/work02.jpg" alt="">
+  <div class="work-item-ph" style="display:none;">②</div>
+</div>
+  <div class="work-item" onclick="openModal('img/work02.jpg')">
+  <img src="img/work02.jpg" alt="">
+  <div class="work-item-ph" style="display:none;">②</div>
+</div>
+  <div class="work-item" onclick="openModal('img/work02.jpg')">
+  <img src="img/work02.jpg" alt="">
+  <div class="work-item-ph" style="display:none;">②</div>
+</div>
+  <div class="work-item" onclick="openModal('img/work02.jpg')">
+  <img src="img/work02.jpg" alt="">
+  <div class="work-item-ph" style="display:none;">②</div>
+</div>
+  <div class="work-item" onclick="openModal('img/work02.jpg')">
+  <img src="img/work02.jpg" alt="">
+  <div class="work-item-ph" style="display:none;">②</div>
+</div>
+  <div class="work-item" onclick="openModal('img/work02.jpg')">
+  <img src="img/work02.jpg" alt="">
+  <div class="work-item-ph" style="display:none;">②</div>
+</div>
+  <div class="work-item" onclick="openModal('img/work02.jpg')">
+  <img src="img/work02.jpg" alt="">
+  <div class="work-item-ph" style="display:none;">②</div>
+</div>
 </div>
 
 <div class="works-grid works-more-grid" style="display:none; margin-top:0.6rem;">
-  <div class="work-item"><div class="work-item-ph">⑬</div></div>
-  <div class="work-item"><div class="work-item-ph">⑭</div></div>
-  <div class="work-item"><div class="work-item-ph">⑮</div></div>
-  <div class="work-item"><div class="work-item-ph">⑯</div></div>
-  <div class="work-item"><div class="work-item-ph">⑰</div></div>
-  <div class="work-item"><div class="work-item-ph">⑱</div></div>
-  <div class="work-item"><div class="work-item-ph">⑲</div></div>
-  <div class="work-item"><div class="work-item-ph">⑳</div></div>
+  <div class="work-item" onclick="openModal('img/work02.jpg')">
+  <img src="img/work02.jpg" alt="">
+  <div class="work-item-ph" style="display:none;">②</div>
+</div>
+  <div class="work-item" onclick="openModal('img/work02.jpg')">
+  <img src="img/work02.jpg" alt="">
+  <div class="work-item-ph" style="display:none;">②</div>
+</div>
+  <div class="work-item" onclick="openModal('img/work02.jpg')">
+  <img src="img/work02.jpg" alt="">
+  <div class="work-item-ph" style="display:none;">②</div>
+</div>
+  <div class="work-item" onclick="openModal('img/work02.jpg')">
+  <img src="img/work02.jpg" alt="">
+  <div class="work-item-ph" style="display:none;">②</div>
+</div>
+  <div class="work-item" onclick="openModal('img/work02.jpg')">
+  <img src="img/work02.jpg" alt="">
+  <div class="work-item-ph" style="display:none;">②</div>
+</div>
+  <div class="work-item" onclick="openModal('img/work02.jpg')">
+  <img src="img/work02.jpg" alt="">
+  <div class="work-item-ph" style="display:none;">②</div>
+</div>
+  <div class="work-item" onclick="openModal('img/work02.jpg')">
+  <img src="img/work02.jpg" alt="">
+  <div class="work-item-ph" style="display:none;">②</div>
+</div>
+  <div class="work-item" onclick="openModal('img/work02.jpg')">
+  <img src="img/work02.jpg" alt="">
+  <div class="work-item-ph" style="display:none;">②</div>
+</div>
 </div>
 
 <div class="works-more">
@@ -921,7 +1017,13 @@
       <div class="footer-logo">URU</div>
       <p class="footer-copy">© URU. All rights reserved.</p>
     </footer>
-
+    <!-- モーダル -->
+<div class="modal" id="modal" onclick="closeModal()">
+  <div class="modal-inner" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <img class="modal-img" id="modal-img" src="" alt="">
+  </div>
+</div>
   </div><!-- /container -->
 
   <script>
@@ -943,6 +1045,14 @@
     grid.style.display = 'none';
     btn.textContent = 'more →';
   }
+}
+    function openModal(src) {
+  document.getElementById('modal-img').src = src;
+  document.getElementById('modal').classList.add('open');
+}
+
+function closeModal() {
+  document.getElementById('modal').classList.remove('open');
 }
  </script>
 </body>
