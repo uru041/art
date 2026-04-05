@@ -121,6 +121,7 @@
   z-index: 10;
 }
 
+    
 @keyframes float-flip {
   0%   { transform: translateY(0px) rotate(-20deg); }
   50%  { transform: translateY(-12px) rotate(-20deg); }
@@ -710,7 +711,7 @@
         <div class="about-name">URU</div>
         <div class="about-role">Watercolor Illustrator / Web Designer</div>
 
-        <p class="about-text">愛知県出身。水彩イラストレーターとして、Adobe Stock・ピクスタにて1,000点以上の作品を販売中。食べ物・植物・夏モチーフを得意としています。</p>
+        <p class="about-text">水彩イラストレーターとして、Adobe Stock・ピクスタにて1,000点以上の作品を販売中。食べ物・植物・夏モチーフを得意としています。</p>
         <p class="about-text">Webデザイナーとしての経験も持ち、LPやバナー制作も対応可能。オリジナル水彩ブラシの販売・YouTubeでの制作動画も発信しています。</p>
 
         <div class="about-tags">
@@ -719,6 +720,7 @@
           <span class="about-tag">ピクスタ</span>
           <span class="about-tag">Procreate</span>
           <span class="about-tag">Web Design</span>
+          <span class="about-tag">@Tokyo</span>
         </div>
       </div>
     </section>
@@ -846,7 +848,7 @@
               <span class="qa-toggle">＋</span>
             </div>
             <div class="qa-answer">
-              <div class="qa-answer-inner">PNG（透過）・JPEG・PDF・PSD・AI形式に対応しています。用途に合わせてお届けします。</div>
+              <div class="qa-answer-inner">PNG（透過）・JPEG・PDF・PSD形式に対応しています。用途に合わせてお届けします。</div>
             </div>
           </div>
           <div class="qa-item">
@@ -864,7 +866,7 @@
               <span class="qa-toggle">＋</span>
             </div>
             <div class="qa-answer">
-              <div class="qa-answer-inner">食べ物・植物・夏・レトロなモチーフが得意です。水彩で描く食べ物のイラストは特に力を入れています。</div>
+              <div class="qa-answer-inner">食べ物・植物・季節を感じるもの、レトロなモチーフなどが得意です。水彩で描く食べ物のイラストは特に力を入れています。</div>
             </div>
           </div>
         </div>
@@ -929,7 +931,7 @@
       document.querySelectorAll('.qa-item').forEach(i => i.classList.remove('open'));
       if (!isOpen) item.classList.add('open');
     }
-  </script>
+ 
   function toggleMore(e) {
   e.preventDefault();
   const grid = document.querySelector('.works-more-grid');
@@ -942,6 +944,6 @@
     btn.textContent = 'more →';
   }
 }
-
+ </script>
 </body>
 </html>
