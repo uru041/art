@@ -930,6 +930,18 @@
       if (!isOpen) item.classList.add('open');
     }
   </script>
+  function toggleMore(e) {
+  e.preventDefault();
+  const grid = document.querySelector('.works-more-grid');
+  const btn = e.target;
+  if (grid.style.display === 'none') {
+    grid.style.display = 'grid';
+    btn.textContent = 'close ↑';
+  } else {
+    grid.style.display = 'none';
+    btn.textContent = 'more →';
+  }
+}
 
 </body>
 </html>
