@@ -38,6 +38,8 @@
     .container {
       max-width: 480px;
       margin: 0 auto;
+      border-left: 1px solid #E4C387;
+ 　　 border-right: 1px solid #E4C387;
       position: relative;
       background: rgba(255, 248, 220, 1);
     }
@@ -54,6 +56,19 @@
   justify-content: center;
 }
 
+    /* メインイラストふわふわ */
+.hero-main-illust {
+  width: 88%;
+  margin: 0 auto 2.5rem;
+  display: block;
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
     .hero-title {
       font-family: 'Milonga', serif;
       font-size: 3.5rem;
@@ -103,6 +118,7 @@
   width: 200px;
   opacity: 0.9;
   animation: float 4s ease-in-out 1s infinite;
+  z-index: 10;
 }
 
 @keyframes float {
