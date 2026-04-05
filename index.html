@@ -595,20 +595,21 @@
 
     /* ===== ナビ（固定） ===== */
     nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 100;
-      background: rgba(254,250,232,0.92);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid rgba(180,154,90,0.15);
-      padding: 0.8rem 1.5rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 100%;
-      left: 50%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background: rgba(254,250,232,0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(180,154,90,0.15);
+  padding: 0.8rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 480px;
+  left: 50%;
   transform: translateX(-50%);
-    }
+}
 
     .nav-logo {
       font-family: 'Milonga', serif;
