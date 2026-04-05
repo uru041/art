@@ -595,7 +595,13 @@
       letter-spacing: 0.1em;
       opacity: 0.6;
     }
-
+/* ===== タブレット対応 ===== */
+@media (min-width: 600px) {
+  .hero {
+    min-height: auto;        /* 95vh を解除 */
+    padding: 5rem 2rem 3rem; /* 上下を詰める */
+  }
+}
     /* ===== ナビ（固定） ===== */
     nav {
   position: fixed;
